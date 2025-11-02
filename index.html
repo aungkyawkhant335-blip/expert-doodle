@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Trading Templates</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .box {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+    }
+
+    button {
+      background: rgba(255, 255, 255, 0.3);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    a {
+      display: block;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px;
+      text-decoration: none;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="text-align: center; margin-bottom: 30px;">
+    <div style="font-size: 2em;">🤖</div>
+    <h1>My Trading Assistant</h1>
+    <div>Professional Trading Journal</div>
+  </div>
+
+  <div class="box">
+    <h3>🎯 Trade Entry</h3>
+    <div>ENTRY | SYMBOL | PRICE | SIZE | STRATEGY</div>
+    <button onclick="navigator.clipboard.writeText('ENTRY | SYMBOL | PRICE | SIZE | STRATEGY\n\nTP: | SL: \nSETUP: ')">Copy Template</button>
+  </div>
+
+  <div class="box">
+    <h3>🔴 Trade Exit</h3>
+    <div>EXIT | SYMBOL | PRICE | P&L | DURATION</div>
+    <button onclick="navigator.clipboard.writeText('EXIT | SYMBOL | PRICE | P&L | DURATION\n\nRESULT: \nLEARNING: ')">Copy Template</button>
+  </div>
+
+  <div class="box">
+    <h3>📅 Daily Plan</h3>
+    <div>PLAN | DATE | KEY LEVELS | FOCUS</div>
+    <button onclick="navigator.clipboard.writeText('PLAN | DATE\n\nKEY LEVELS:\n\nFOCUS: ')">Copy Template</button>
+  </div>
+
+  <a href="https://www.tradingview.com/chart/" target="_blank">📊 TradingView Charts</a>
+  <a href="https://www.bybit.com" target="_blank">💹 Bybit Trading</a>
+</body>
+
+</html>
